@@ -10,4 +10,7 @@
 Ingredient.create(name: "menos")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "receps")
+Ingredient.create(name: "prits")
+Ingredient.create(name: "green leaves")
 
