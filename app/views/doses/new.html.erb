@@ -1,7 +1,12 @@
-<h1>Dose Form</h1>
-
-<%= simple_form_for([@cocktail, @dose]) do |f| %>
-  <%= f.input :description %>
-  <%= f.association  :ingredient %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container">
+  <h1 class="text-center dose-color">Dose Form</h1>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <%= simple_form_for([@cocktail, @dose]) do |f| %>
+        <%= f.input :description %>
+        <%= f.association  :ingredient %>
+        <%= f.button :submit %>
+      <% end %>
+    </div>
+  </div>
+</div>

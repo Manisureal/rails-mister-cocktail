@@ -1,16 +1,23 @@
 <div class="container" class="conatiner_background">
-<h1>Hello</h1>
-<!-- <div class="row"> -->
-<!-- <div class="col-xs-6 col-xs-offset-3"> -->
-  <%= @cocktail.name %>
-<ul>
-<% @cocktail.doses.each do |dose| %>
-  <li><%= dose.description %> - <%= dose.ingredient.name %></li>
-<% end %>
-</ul>
-<!-- </div>
-</div> -->
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <h1><%= @cocktail.name %></h1>
+      <!-- <div class="row"> -->
+      <!-- <div class="col-xs-6 col-xs-offset-3"> -->
 
-<%= link_to 'Back to list of cocktails', cocktails_path, class: 'btn btn-success' %>
-<%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+    <ul>
+      <% @cocktail.doses.each do |dose| %>
+      <li><%= dose.description %> - <%= dose.ingredient.name %></li>
+      <% end %>
+    </ul>
+    <!-- </div>
+    </div> -->
+
+
+      <%= link_to 'Back to list of cocktails', cocktails_path, class: 'btn btn-success' %>
+
+      <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+
+    </div>
+  </div>
 </div>
