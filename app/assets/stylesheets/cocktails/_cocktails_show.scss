@@ -1,0 +1,29 @@
+.main-container {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    margin: 50px 200px;
+    padding: 50px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #FCFCFC;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px #FCFCFC;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.text-container {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    vertical-align: middle;
+}
+
+#cocktail-photo {
+  -webkit-box-flex: 1;
+  flex: 1 0 15%;
+}

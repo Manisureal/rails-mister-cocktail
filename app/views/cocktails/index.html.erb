@@ -2,7 +2,7 @@
   <div class="banner-content">
     <h1>Welcome to Mister Cocktail...</h1>
     <p>You know your Mrs would love one</p>
-    <%= link_to 'Pick A Random Cocktail', cocktail_path(@cocktails.ids.shuffle), class: 'btn btn-primary btn-lg' %>
+    <%= link_to 'Pick A Random Cocktail', cocktail_path(@cocktails.ids.shuffle.first), class: 'btn btn-primary btn-lg' %>
   </div>
 </div>
 
