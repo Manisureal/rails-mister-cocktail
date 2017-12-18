@@ -7,7 +7,9 @@ end
 
 ruby '2.3.5'
 
-# for cloudinary setup
+# install cloudinary for picture uploads
+gem 'cloudinary'
+# To secure application.yml files
 gem 'figaro'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
