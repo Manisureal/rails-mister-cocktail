@@ -7,6 +7,8 @@ end
 
 ruby '2.3.5'
 
+#To upload files associated(Cloudinary) to Models
+gem 'carrierwave', '~> 0.11.2'
 # install cloudinary for picture uploads
 gem 'cloudinary'
 # To secure application.yml files
