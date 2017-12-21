@@ -1,24 +1,17 @@
 <div class="main-container" class="conatiner_background">
-  <div class="row">
+
     <div class="text-container">
     <h1><%= @cocktail.name %></h1>
 
-    <ul>
-      <% @cocktail.doses.each do |dose| %>
-      <li><%= dose.description %> - <%= dose.ingredient.name %></li>
-      <% end %>
-    </ul>
-
-
-    <div id="cocktail-photo">
-      <img src="http://res.cloudinary.com/manisureal/image/upload/<%= @cocktail.photo %>" alt="cocktail-pic">
-    </div>
-
-
-      <%= link_to 'Back to list of cocktails', cocktails_path, class: 'btn btn-success' %>
+      <%= link_to 'Back to Cocktails', cocktails_path, class: 'btn btn-success' %>
 
       <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
 
     </div>
-  </div>
+
+
+    <div id="cocktail-photo">
+      <%= cl_image_tag @cocktail.photo %>
+    </div>
+
 </div>
